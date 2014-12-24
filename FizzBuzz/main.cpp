@@ -16,10 +16,11 @@ int main(int argc, const char * argv[]) {
     while( IS >> X >> Y >> N){
     
         for (int i = 1; i<= N; i++) {
-            if((i%X == 0) && (i%Y == 0)){
-                cout << "FB";
-            }else if(i%X == 0){
-                cout << "F";
+            if(i%X == 0){
+                if(i%Y ==0){cout << "FB";
+                }else{
+                    cout << "F";
+                }
             }else if(i%Y == 0){
                 cout << "B";
             }else{
